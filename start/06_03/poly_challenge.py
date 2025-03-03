@@ -12,13 +12,15 @@ class Animal:
 
 
 class Dog(Animal):
-    pass
+    def make_sound(self):
+        print("Wof-Wof")
 
 # Subclass Cat
 
 
 class Cat(Animal):
-    pass
+    def make_sound(self):
+        print("Meo-Meo")
 
 
 # Create instances

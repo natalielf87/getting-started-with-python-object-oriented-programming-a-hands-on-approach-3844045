@@ -25,7 +25,11 @@ class BankAccount:
         self._account_holder = account_holder
 
     def set_balance(self, balance):
-        pass
+        if not (isinstance(balance, int) or isinstance(balance, float)):
+            print("Error: balance must be of any numeric type")
+        elif balance < 0:
+            print("Error: balance must be positive")
+        self._balance = balance
 
 
 # Example usage
